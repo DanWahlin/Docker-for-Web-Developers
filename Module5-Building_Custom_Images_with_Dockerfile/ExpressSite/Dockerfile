@@ -1,12 +1,12 @@
 FROM node:latest
 
-MAINTAINER Dan Wahlin
+LABEL author="Dan Wahlin"
 
 ENV NODE_ENV=production 
 ENV PORT=3000
 
-COPY      . /var/www
 WORKDIR   /var/www
+COPY      . .
 
 RUN       npm install
 
