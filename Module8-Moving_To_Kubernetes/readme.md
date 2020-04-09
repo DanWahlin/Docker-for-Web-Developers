@@ -1,4 +1,4 @@
-## This module has been deprecated
+## Moving to Kubernetes
 
 You can get the project used for this module of the course here:
 
