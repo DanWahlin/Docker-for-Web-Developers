@@ -13,3 +13,11 @@ To run the container run with a custom volume location:
 
 Visit http://localhost:3000 and refresh the page a few times. Then open the `logs/access.log` file and you should see the log entries.
 
+### Additional Docker Commands Run in the demo
+
+`docker volume --help`
+`docker volume ls`
+`docker inspect <container-name>`
+`docker volume inspect <volume-name>`
+
+ 
