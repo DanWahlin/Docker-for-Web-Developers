@@ -15,7 +15,6 @@ FROM build AS publish
 RUN dotnet publish "./ASP.NETCoreDemos.csproj" -c Release -o /app/publish
 
 FROM base AS final
-ENV  ASPNETCORE_URLS=http://*:${PORT}
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "ASP.NETCoreDemos.dll"]
